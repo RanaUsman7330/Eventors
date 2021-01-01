@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eventors.MainPage"
+             Title="Main Page">
+
+    <StackLayout>
+        
+            <Frame BackgroundColor="White" >
+            <Label Text="Main Page" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="38" TextColor="LightSeaGreen" />
+            </Frame>
+        
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+            <Label Text="Admin" TextColor="Black" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label Text="|" TextColor="Black" FontAttributes="Bold" />
+
+            <Label Text="Client" TextColor="Black" FontAttributes="Bold" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+            <Label Text="|" TextColor="Black" FontAttributes="Bold" />
+
+            <Label Text="Owner" TextColor="Black" FontAttributes="Bold" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

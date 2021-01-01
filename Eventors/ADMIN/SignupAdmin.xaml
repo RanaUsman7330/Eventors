@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eventors.ADMIN.SignupAdmin"
+             Title="SigUp"
+             BackgroundImageSource="wallpaper">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="0" >
+                <Frame BackgroundColor="White" >
+                    <Label Text="Create Your Account" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="25" TextColor="LightSeaGreen" />
+                </Frame>
+                
+               
+
+
+                    <StackLayout  Padding="20" Spacing="18">
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+                <Image Source="Username" WidthRequest="40" HeightRequest="50"/>
+                <Entry PlaceholderColor="LightYellow" Placeholder="Enter Admin Name" x:Name="txtName"  HorizontalOptions="FillAndExpand" ReturnType="Next" />
+                    </StackLayout>
+                        
+                    <!--<StackLayout Orientation="Horizontal" Spacing="0">-->
+
+                        <Image Source="android" HeightRequest="130"  x:Name="PreviewImage">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+
+                            </Image.GestureRecognizers>
+
+
+                        </Image>
+                    <!--</StackLayout>-->
+
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                <Image Source="Email" WidthRequest="40" HeightRequest="50"/>
+                <Entry PlaceholderColor="LightYellow" Placeholder="Enter Email" Keyboard="Email" x:Name="txtEmail"  HorizontalOptions="FillAndExpand" ReturnType="Next"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Spacing="0">
+                <Image Source="Pass" WidthRequest="40" HeightRequest="50"/>
+                <Entry PlaceholderColor="LightYellow" IsPassword="True" Placeholder="Enter Password" x:Name="txtPass"  HorizontalOptions="FillAndExpand" ReturnType="Next" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Spacing="0">
+                <Image Source="Username" WidthRequest="40" HeightRequest="50"/>
+                        <Entry PlaceholderColor="LightYellow"  Placeholder="CNIC"  Keyboard="Numeric" x:Name="txtCNIC" HorizontalOptions="FillAndExpand"  ReturnType="Next" />
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <Image Source="Phone" WidthRequest="40" HeightRequest="50"/>
+                        <Entry PlaceholderColor="LightYellow" Placeholder="Enter Your Address"  x:Name="txtAddress" HorizontalOptions="FillAndExpand"  ReturnType="Done" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                <Image Source="Phone" WidthRequest="40" HeightRequest="50"/>
+                <Entry PlaceholderColor="LightYellow" Placeholder="Enter Phone Number" Keyboard="Numeric" x:Name="txtPhone" HorizontalOptions="FillAndExpand"  ReturnType="Done" />
+            </StackLayout>
+
+
+
+                 <Button Text="SignUp" x:Name="BtnSignUpAdmin" Clicked="BtnSignUpAdmin_Clicked" />
+
+                    </StackLayout>
+
+                   
+
+
+
+
+
+                    
+
+               
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
