@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventors.Android", "Eventor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventors.iOS", "Eventors.iOS\Eventors.iOS.csproj", "{D32E6682-1400-495B-A858-223058C176BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventors", "Eventors\Eventors.csproj", "{941ACD32-230C-4C08-9AA2-5DE61A6B3479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventors", "Eventors\Eventors.csproj", "{941ACD32-230C-4C08-9AA2-5DE61A6B3479}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RRRRR", "RRRRR", "{0B87E419-C140-4511-A5A9-F3E28C961CBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
